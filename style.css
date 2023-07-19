@@ -26,10 +26,7 @@
 }
 
 .g {
-    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #FF42A5;
 }
 
 .purple-title {
@@ -75,9 +72,9 @@
 .menu-item {
     text-decoration: none;
     margin: 0 30px;
-    color: #3C354F;
+    color: #534C64;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .menu-item:hover {
@@ -94,7 +91,7 @@
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.1);
     text-decoration: none;
-    color: #3C354F;
+    color: #534C64;
     font-size: 17px;
     font-weight: 500;
 }
@@ -163,7 +160,7 @@
 }
 
 .btn-1 {
-    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-color: #FF42A5;
     margin-right: 20px;
 }
 
@@ -187,7 +184,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    background-color: rgba(255, 66, 165, 0.03);
     margin-top: -2.5px;
 }
 
@@ -282,6 +279,7 @@
     display: inline-block;
     width: 45px;
     padding-top: 45%;
+    cursor: pointer;
 }
 
 .middle-text {
@@ -341,7 +339,7 @@
 /* game styles */
 
 .game {
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    background-color: rgba(255, 66, 165, 0.03);
     padding: 100px 0;
 }
 
@@ -398,44 +396,43 @@
     text-align: center;
     gap: 10px;
     cursor: pointer;
-    height: 60px;
-    margin: 2px;
+    margin: 5px auto;
 }
 
 .action:hover {
-    width: 170px;
+    padding: 1%;
 }
 
 .adventure:hover {
-    width: 200px;
+    padding: 1%;
 }
 
 .arcade:hover {
-    width: 170px;
+    padding: 1%;
 }
 
 .educational:hover {
-    width: 210px;
+    padding: 1%;
 }
 
 .word:hover {
-    width: 160px;
+    padding: 1%;
 }
 
 .role:hover {
-    width: 210px;
+    padding: 1%;
 }
 
 .music:hover {
-    width: 165px;
+    padding: 1%;
 }
 
 .puzzle:hover {
-    width: 170px;
+    padding: 1%;
 }
 
 .strategy:hover {
-    width: 180px;
+    padding: 1%;
 }
 
 .game-content:hover {
@@ -831,7 +828,7 @@
 
     .play {
         flex-direction: column;
-        margin: 0 20px;
+        margin: 0 40px;
     }
 
     .play-content {
@@ -844,15 +841,15 @@
     }
 
     .icon-1 {
-        width: 600px;
-        margin-right: -124px;
+        width: 580px;
+        margin-right: -104px;
     }
 
     .icon-2 {
-        width: 280px;
+        width: 260px;
         margin: 0;
         margin-top: -240px;
-        margin-left: -125px;
+        margin-left: -105px;
     }
 
     .game-section {

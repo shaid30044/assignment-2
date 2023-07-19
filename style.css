@@ -25,6 +25,13 @@
     font-weight: 700;
 }
 
+.g {
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .purple-title {
     font-size: 48px;
     font-weight: 700;
@@ -292,7 +299,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 160px;
+    margin: 100px 160px 0;
 }
 
 .play-content {
@@ -321,11 +328,16 @@
 /* game styles */
 
 .game {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 100px 0;
+}
+
+.game-section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     align-items: center;
-    margin: 0 160px 80px;
+    margin: 0 160px;
     gap: 10px;
 }
 
@@ -392,6 +404,80 @@
 
 .game-name:hover {
     color: #FF42A5;
+}
+
+/* footer styles */
+
+.footer {
+    background: #0B0223;
+    padding: 100px 0;
+}
+
+.footer-section {
+    margin: 0 160px;
+}
+
+.footer-logo-section {
+    justify-content: center;
+}
+
+.footer-titles {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px 0 40px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-title:hover {
+    color: #FF42A5;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo-name {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.logo-link {
+    width: 30px;
+    padding: 0 20px;
+}
+
+.footer-condition {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 0 30px;
+}
+
+.condition-name {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.condition-name:hover {
+    color: #FF42A5;
+}
+
+.copy-right-info {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* responsive styles */
@@ -542,6 +628,10 @@
     }
 
     .game {
+        padding: 40px 0;
+    }
+
+    .game-section {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         align-items: center;
@@ -559,6 +649,53 @@
 
     .game-name {
         font-size: 10px;
+    }
+
+    .footer {
+        padding: 60px 0;
+    }
+
+    .footer-section {
+        margin: 0 20px;
+    }
+
+    .footer-titles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .footer-title {
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .logo-link {
+        width: 20px;
+    }
+
+    .footer-condition {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+
+    .condition-name {
+        font-size: 14px;
+    }
+
+    .copy-right-info {
+        text-align: center;
+        margin: auto;
+        width: 240px;
+        font-size: 12px;
     }
 }
 
@@ -662,7 +799,7 @@
         margin-left: -125px;
     }
 
-    .game {
+    .game-section {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         align-items: center;
@@ -674,11 +811,42 @@
         gap: 10px;
     }
 
-    /* .game-icon {
-        width: 20px;
-    } */
+    .footer {
+        padding: 60px 0;
+    }
 
-    /* .game-name {
-        font-size: 10px;
-    } */
+    .footer-section {
+        margin: 0 40px;
+    }
+
+    .footer-titles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 20px;
+        padding: 30px 0 40px;
+    }
+
+    .footer-logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .logo-link {
+        width: 25px;
+    }
+
+    .footer-condition {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 20px;
+        padding: 40px 0 20px;
+    }
+
+    .copy-right-info {
+        text-align: center;
+        margin: auto;
+    }
 }
